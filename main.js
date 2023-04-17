@@ -7,7 +7,7 @@ function closeMenu() {
 }
 
 function cardOpen (){
-  const openCard = document.querySelectorAll('.card');
+  const openCard = document.querySelectorAll('.Card');
   
   openCard.forEach(function(open) {
     open.addEventListener('click', function() {
@@ -18,7 +18,7 @@ function cardOpen (){
 }
 
 function closeCard() {
-  const closeCard = document.querySelectorAll('.card')
+  const closeCard = document.querySelectorAll('.Card')
 
   closeCard.forEach(function(close) {
     close.addEventListener('click', function() {
