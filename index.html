@@ -147,7 +147,7 @@
       <h2>Como podemos ajudá-lo(a) a se sentir melhor?</h2>
     </div>
   </section>
-
+  <em><p id="phrase">*Consulte as especialidades com atendimento por convênios.</p> </em>
   <div class="cards">
     <div class="Card">
         <header class="headerCard">
@@ -372,7 +372,7 @@
               <img src="./images/group.jpeg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="/images/born.jpeg" class="d-block w-100" alt="...">
+              <img src="./images/born.jpeg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
               <img src="./images/doctorborn.jpeg" class="d-block w-100" alt="...">
@@ -401,14 +401,14 @@
 
   <div id="convenios">
       <ul>
-        <li><img src="/assets/logo_unimed.png" alt="logomarca da unimed"></li>
-        <li><img src="/assets/ipm_saude.png" alt="logomarca ipm"></li>
-        <li><img src="/assets/issec.png" alt="logomarca do issec"></li>
-        <li><img src="/assets/bradesco-saude.png" alt="lgomarca bradesco saude"></li>
+        <li><img src="./assets/logo_unimed.png" alt="logomarca da unimed"></li>
+        <li><img src="./assets/ipm_saude.png" alt="logomarca ipm"></li>
+        <li><img src="./assets/issec.png" alt="logomarca do issec"></li>
+        <li><img src="./assets/bradesco-saude.png" alt="lgomarca bradesco saude"></li>
       </ul>
   </div>
 
-  <section id="form">
+  <section>
     <div id="contact">
       <h2>Entre em contato com a gente!</h2>
       <p>
@@ -430,23 +430,29 @@
     </div>
     
     <form action="#">
-      <fieldset>
-        <div>
+      <fieldset >
+        <div class="fieldset-wrapper">
           <legend>Olá, conte-nos como podemos ajuda-lo(a)</legend>
-          <label for="eventName"> Digite seu nome:</label>
-          <input type="text" name="" id="eventName" />
-
-          <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">Example label</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+          <div class="input-wrapper">
+            <label for="eventName"> Seu nome:</label>
+            <input type="text" name="" id="eventName" />
           </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label">Another label</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+          <div class="input-wrapper">
+            <label for="eventEmail">Seu email:</label>
+            <input type="text" id="eventEmail" />
+          </div>
+          <div class="input-wrapper">
+            <label for="event-whatsapp">Whatsapp para contato <span>(somente números)</span></label>
+                <input type="number" id="event-whatsapp" required />
+          </div>
+          <div class="input-wrapper">
+            <label for="event-info">Informações extras </label>
+            <textarea name="" id="event-info" cols="30" rows="10"></textarea>
           </div>
 
         </div>
       </fieldset>
+      <input class="buttonForm" type="submit" form="form" value="Enviar">
     </form>
   </section>
 
