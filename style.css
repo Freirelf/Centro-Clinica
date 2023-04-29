@@ -413,7 +413,7 @@ h3 {
   background-color: #fff;
   background-image: url('./images/backgroundCard.png');
   background-attachment: fixed;
-  background-position: center;
+  background-position: left;
   background-size: cover;
 
 }
