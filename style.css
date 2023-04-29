@@ -164,7 +164,7 @@ nav#navigation.scroll .icon {
 }
 
 .menu-expended .menu {
-  width: 60rem;
+  max-width: 60rem;
   position: absolute;
   top: 50px;
   margin-top: 4rem;
