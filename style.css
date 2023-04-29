@@ -410,7 +410,6 @@ h3 {
   margin-inline: auto;
   padding: 1rem 0;
 
-
   background-color: #fff;
   background-image: url('./images/backgroundCard.png');
   background-attachment: fixed;
@@ -557,8 +556,6 @@ h3 {
   left: 50%;
   transform: translateX(-50%);
   transition: top 20ms ease-in-out;
-
-
 }
 
 .card-expended .info {
@@ -777,6 +774,7 @@ footer p {
   transform: translateY(100%);
   transition: 200ms;
 }
+
 
 #backToTopButton.show {
   opacity: 1;
