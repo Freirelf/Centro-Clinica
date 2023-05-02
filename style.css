@@ -623,7 +623,7 @@ h3 {
   #convenios ul {
     flex-direction: column;
     margin-bottom: 1rem;
-  }
+  } 
 }
 
 @media (min-width: 800px) {
@@ -724,6 +724,11 @@ input, textarea {
   line-height: 2.6rem ;
   color: #fff;
 }
+
+input:invalid {
+  border: 1px solid #ff1010;
+} 
+
 
 footer {
   margin-top: 10rem;
