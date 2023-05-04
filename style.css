@@ -92,7 +92,7 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   background-color: #ffffff;
-  padding: 16px 32px;
+  padding: 12px 7px;
   border-radius: 4rem;
 
   color: var(--textButtonColor);
@@ -102,6 +102,12 @@ a {
   margin-bottom: 8rem;
 
   box-shadow: 0px 0px 5px 2px #00000073;
+}
+
+@media (max-width: 400px) {
+  .menu .button {
+    padding: 0;
+  }
 }
 
 .menu .button:hover {
@@ -132,7 +138,7 @@ nav#navigation {
 }
 
 nav#navigation.scroll {
-  background-color: var(--backgroundColor);
+  background-color: hsl(213deg 31.07% 31.84%);
 }
 
 nav#navigation.scroll path {
@@ -467,7 +473,7 @@ h3 {
 .openCard {
   background-color: var(--backgroundColor);
 
-  height: 5rem;
+  height: 4rem;
 
   font-weight: 700;
   font-size: 14px;
@@ -476,7 +482,7 @@ h3 {
 
   color: #f0f9ff;
 
-  margin-left: -1.5px;
+  margin-top: 1rem;
   border-radius: 6px;
   box-shadow: 0px 0px 5px 2px #00000073;
 }
@@ -516,7 +522,7 @@ h3 {
 
 
 .card-expended {
-  background-color: var(--backgroundColor);
+  background-color: #3c607aa1;
   transition: all 200ms ease-in;
 }
 
@@ -608,6 +614,8 @@ h3 {
 
 #convenios ul {
   display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 #convenios li {
@@ -615,15 +623,16 @@ h3 {
 }
 
 #convenios {
+  display: grid;
+  justify-content: center;
   background-color: #e3c563b1;
 
 }
 
-@media (max-width: 500px) {
-  #convenios ul {
-    flex-direction: column;
-    margin-bottom: 1rem;
-  } 
+@media (max-width: 450px) {
+ #convenios li img {
+    width: 5rem;
+  }
 }
 
 @media (min-width: 800px) {
@@ -639,7 +648,6 @@ h3 {
   padding: 3rem;
 
   text-align: left;
-  height: 50rem;
 }
 
 #contact h2 {
@@ -671,8 +679,12 @@ h3 {
   box-shadow: 0px 0px 5px 2px #00000073;
 }
 
+.form {
+  margin: 2rem;
+}
+
 form {
-  background-color: #29be65be;
+  background-color: #3c607aa1;;
   max-width: 45rem;
   margin: 0 auto;
   padding: 3rem;
@@ -700,6 +712,10 @@ input, textarea {
   text-indent: 10px;
 }
 
+.textarea {
+  padding: 0 1rem;
+}
+
 .fieldset-wrapper {
   display: flex;
   flex-direction: column;
@@ -715,14 +731,19 @@ input, textarea {
   margin-top: 2rem;
   text-indent: 0;
 
-  width: 60px;
+  width: 12rem;
 
-  background: #212529c6;
+  background-color: #212529c6;
+  box-shadow: 1px 0px 8px 0px #0000008c;
 
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 2.6rem ;
   color: #fff;
+}
+
+.buttonForm:hover {
+  background-color: #0d2646;
 }
 
 input:invalid {
@@ -733,7 +754,7 @@ input:invalid {
 footer {
   margin-top: 10rem;
   padding: 2rem;
-  background-color: var(--backgroundColor);
+  background-color: hsl(213deg 31.07% 31.84%);
 }
 
 footer header {
