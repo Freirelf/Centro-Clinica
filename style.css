@@ -72,6 +72,8 @@ a {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 3.1rem;
+
+  padding-left: 0;
 }
 
 .menu ul a {
@@ -92,7 +94,7 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   background-color: #ffffff;
-  padding: 12px 7px;
+  padding: 15px 18px;
   border-radius: 4rem;
 
   color: var(--textButtonColor);
@@ -170,7 +172,7 @@ nav#navigation.scroll .icon {
 }
 
 .menu-expended .menu {
-  max-width: 60rem;
+  width: 36rem;
   position: absolute;
   top: 50px;
   margin-top: 4rem;
@@ -243,7 +245,7 @@ body.menu-expended #convenios,
 body.menu-expended footer,
 body.menu-expended form,
 body.menu-expended #contact, 
-body.menu-expended #phrase,
+body.menu-expended #observation,
 body.menu-expended #backToTopButton {
   display: none;
 }
@@ -342,7 +344,7 @@ body.menu-expended .logo {
 
 /* -- Section bottom -- */
 
-.photo {
+#backgroundImage {
   position: relative;
   margin-top: 6rem;
   z-index: -1!important;
@@ -418,8 +420,8 @@ h3 {
 
   background-image: url('./images/backgroundCard.png');
   background-attachment: fixed;
-  background-position: left;
-  background-size: cover;
+  background-position: center;
+
 
 }
 
@@ -432,7 +434,7 @@ h3 {
 
   margin: 10rem auto 5rem;
 
-  
+
   border: 1px solid rgba(98, 97, 97, 0.22);
   border-radius: 6px;
 
@@ -530,7 +532,7 @@ h3 {
   color: #f0f9ff;
 }
 
-.info .button {
+.infoCardExpended .button {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.4rem;
@@ -547,11 +549,11 @@ h3 {
   box-shadow: 0px 0px 5px 2px #00000073;
 }
 
-.info .button:hover {
+.infoCardExpended .button:hover {
   filter: contrast(5);
 }
 
-.info {
+.infoCardExpended {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -563,7 +565,7 @@ h3 {
   transition: top 20ms ease-in-out;
 }
 
-.card-expended .info {
+.card-expended .infoCardExpended {
   position: relative;
   z-index: 1;
 
@@ -575,7 +577,7 @@ h3 {
   transition: top 1s linear;
 }
 
-.info p {
+.infoCardExpended p {
   font-family: 'DM Sans';
   text-align: center;
   font-style: normal;

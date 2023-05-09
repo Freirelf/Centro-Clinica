@@ -41,11 +41,6 @@ function activateMenuAtCurrentSection(section) {
 
 
 
-
-
-
-
-
 function showNavOnScroll () {
   const navigation = document.getElementById('navigation')
   if (scrollY > 0) {
@@ -93,3 +88,6 @@ function closeCard() {
     })
   })
 }
+
+ScrollReveal({delay: 200 }).reveal(`#home, .content, .stats, #services, .observation, .cards, .Card, .about, #photos, #convenios, #contact, .form`);
+
