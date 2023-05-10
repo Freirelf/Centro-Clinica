@@ -94,7 +94,7 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   background-color: #ffffff;
-  padding: 15px 18px;
+  max-width: 15rem;
   border-radius: 4rem;
 
   color: var(--textButtonColor);
@@ -767,7 +767,7 @@ footer header {
 }
 
 footer img {
-  background-color: #fffaf1;
+  background-color: #fff;
   border-radius: 4rem;
   padding: 3px;
 }
